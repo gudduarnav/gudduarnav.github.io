@@ -103,7 +103,7 @@
     /* Hero */
     .hero{
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1fr;
       gap: 28px;
       padding: 48px 0 28px;
     }
@@ -163,6 +163,14 @@
       box-shadow: var(--shadow);
     }
     .panel p{ margin: 0; color: var(--muted); }
+    .pub-item{
+      margin: 0 0 10px;
+    }
+    .pub-subtitle{
+      font-weight: 700;
+      color: var(--accent);
+      margin: 10px 0 6px;
+    }
 
     /* Footer */
     footer{
@@ -184,7 +192,6 @@
 
     /* Responsive */
     @media (max-width: 820px){
-      .hero{ grid-template-columns: 1fr; }
       nav ul{ gap: 10px; }
     }
 
@@ -231,22 +238,17 @@
           This page lists my selected publications and contact details. Thanks for visiting!
         </p>
       </div>
-
-      <div class="card panel" role="complementary" aria-labelledby="quick-links">
-        <h2 id="quick-links" class="section-title">Quick Links</h2>
-        <p>
-          • <a href="#publications">Jump to Publications</a><br/>
-          • <a href="#contact">Contact Information</a>
-        </p>
-      </div>
     </section>
 
     <section id="publications" aria-labelledby="pubs-title">
       <h2 id="pubs-title" class="section-title">Publications</h2>
       <div class="panel">
-        <p>
-          Add your publication entries here (e.g., IEEE/ACM papers, preprints, and talks). You can format
-          them as a list with links to PDFs, DOIs, or code repositories.
+        <div class="pub-subtitle">Surveys &amp; Tutorial</div>
+        <p class="pub-item">
+          [S1] A. Mukhopadhyay, K. Singh, F.-S. Tseng, S. K. Singh, K. Dev and C. Pan, 
+          "A Tutorial on Near-Field Driven 6G Networks," in <em>IEEE Communications Surveys &amp; Tutorials</em>, 
+          doi: <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener">10.1109/COMST.2025.3550118</a>. 
+          (Q1 JIF-2025: 46.7)
         </p>
       </div>
     </section>
