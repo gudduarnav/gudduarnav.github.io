@@ -4,303 +4,760 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arnav Mukhopadhyay — PhD Researcher</title>
-  <meta name="description" content="Personal webpage of Arnav Mukhopadhyay, PhD Researcher, National Sun Yat-sen University, Kaohsiung, Taiwan." />
-
+  <meta
+    name="description"
+    content="Personal webpage of Arnav Mukhopadhyay, PhD Researcher, National Sun Yat-sen University, Kaohsiung, Taiwan."
+  />
   <style>
-    :root{
-      --bg: #0f1226;
-      --card: #15193a;
-      --text: #e7e9ff;
-      --muted: #a6abda;
-      --accent: #7ae0ff;
-      --accent2: #b388ff;
-      --link: #80f7d2;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 16px;
+    :root {
+      --bg: #060918;
+      --bg-radial-1: rgba(108, 92, 231, 0.22);
+      --bg-radial-2: rgba(16, 185, 129, 0.2);
+      --bg-radial-3: rgba(14, 165, 233, 0.2);
+      --panel: #101936;
+      --panel-soft: rgba(255, 255, 255, 0.05);
+      --text: #e9ecff;
+      --text-dim: #a5abd9;
+      --accent-1: #7c5cff;
+      --accent-2: #22d3ee;
+      --accent-3: #34d399;
+      --accent-4: #f472b6;
+      --accent-solid: #0e172f;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 45px rgba(2, 6, 23, 0.45);
+      --radius: 18px;
+      --max-width: min(1140px, 93vw);
     }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg: #f7f8ff;
-        --card: #ffffff;
-        --text: #111322;
-        --muted: #5b5f7b;
-        --accent: #0077ff;
-        --accent2: #a945ff;
-        --link: #0aa37f;
-        --shadow: 0 8px 24px rgba(20, 40, 80, .12);
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f6ff;
+        --bg-radial-1: rgba(124, 92, 255, 0.12);
+        --bg-radial-2: rgba(34, 211, 238, 0.14);
+        --bg-radial-3: rgba(16, 185, 129, 0.13);
+        --panel: #ffffff;
+        --panel-soft: rgba(15, 23, 42, 0.03);
+        --text: #141933;
+        --text-dim: #58608f;
+        --accent-1: #5b43dc;
+        --accent-2: #0891b2;
+        --accent-3: #10b981;
+        --accent-4: #db2777;
+        --accent-solid: #e9edff;
+        --border: rgba(15, 23, 42, 0.12);
+        --shadow: 0 16px 38px rgba(15, 23, 42, 0.1);
       }
     }
 
-    *{ box-sizing: border-box; }
-    html,body{ margin:0; padding:0; }
-    body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 10% -10%, rgba(122,224,255,.25), transparent 60%),
-        radial-gradient(1200px 600px at 110% 20%, rgba(179,136,255,.20), transparent 55%),
-        linear-gradient(180deg, var(--bg), var(--bg));
-      min-height: 100vh;
-      line-height: 1.6;
+    * {
+      box-sizing: border-box;
     }
 
-    .container{
-      width: min(1100px, 92vw);
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, Inter, system-ui, -apple-system, Arial, sans-serif;
+      background:
+        radial-gradient(1100px 500px at 8% -10%, var(--bg-radial-1), transparent 60%),
+        radial-gradient(1050px 450px at 92% 15%, var(--bg-radial-2), transparent 55%),
+        radial-gradient(900px 400px at 45% 110%, var(--bg-radial-3), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.58;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(130deg, rgba(255, 255, 255, 0.02), transparent 35%);
+      z-index: -2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: var(--max-width);
       margin: 0 auto;
     }
 
-    /* Header / Nav */
-    header{
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(8px);
-      background: linear-gradient(180deg, rgba(0,0,0,.22), rgba(0,0,0,0));
-      z-index: 10;
-    }
-    .nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0;
-    }
-    .brand{
-      font-weight: 800;
-      letter-spacing: .2px;
-      font-size: clamp(18px, 2.2vw, 22px);
-      color: var(--text);
-      text-decoration: none;
+    .chip {
       display: inline-flex;
       align-items: center;
-      gap: .6rem;
-    }
-    .brand .dot{
-      width: 10px; height: 10px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 3px rgba(122,224,255,.18);
-    }
-    nav ul{
-      list-style: none; margin:0; padding:0;
-      display: flex; gap: 18px;
-    }
-    nav a{
-      text-decoration: none;
-      color: var(--text);
-      padding: 8px 14px;
+      gap: 6px;
       border-radius: 999px;
-      font-weight: 600;
-      transition: transform .15s ease, background .2s ease, color .2s ease;
-    }
-    nav a:hover{
-      background: rgba(255,255,255,.08);
-      transform: translateY(-1px);
-    }
-    nav a.primary{
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color: #0b0f1f;
-      box-shadow: var(--shadow);
-    }
-
-    /* Hero */
-    .hero{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 28px;
-      padding: 48px 0 28px;
-    }
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .hero .card{
-      padding: clamp(18px, 3vw, 28px);
-    }
-    h1{
-      margin: 0 0 8px;
-      font-size: clamp(28px, 5vw, 44px);
-      line-height: 1.1;
-      letter-spacing: .2px;
-    }
-    .subtitle{
-      margin: 0 0 18px;
-      color: var(--muted);
-      font-size: clamp(14px, 2.2vw, 18px);
-    }
-    .badge{
-      display: inline-block;
-      background: linear-gradient(135deg, rgba(122,224,255,.18), rgba(179,136,255,.18));
-      color: var(--text);
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: 999px;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: .2px;
-      margin-bottom: 12px;
-    }
-    .hero p{
-      margin: 12px 0 0;
-      color: var(--text);
-      max-width: 65ch;
-    }
-
-    /* Sections */
-    section{
-      padding: 8px 0 42px;
-    }
-    .section-title{
-      font-size: 20px;
-      font-weight: 800;
-      letter-spacing: .3px;
-      margin: 0 0 14px;
-    }
-    .panel{
-      padding: 20px;
-      border-radius: var(--radius);
-      background: var(--card);
-      border: 1px solid rgba(255,255,255,.12);
-      box-shadow: var(--shadow);
-    }
-    .panel p{ margin: 0; color: var(--muted); }
-    .pub-item{
-      margin: 0 0 10px;
-    }
-    .pub-subtitle{
+      padding: 7px 14px;
+      font-size: 12px;
+      letter-spacing: 0.2px;
       font-weight: 700;
-      color: var(--accent);
-      margin: 10px 0 6px;
-    }
-
-    /* Footer */
-    footer{
-      margin-top: 40px;
-      padding-bottom: 40px;
-    }
-    hr{
-      border: 0;
-      border-top: 1px dashed rgba(255,255,255,.25);
-      margin: 0 0 18px;
-    }
-    .contact{
-      text-align: center;
-      color: var(--muted);
-      font-weight: 600;
-    }
-    .contact a{ color: var(--link); text-decoration: none; }
-    .contact a:hover{ text-decoration: underline; }
-
-    /* Responsive */
-    @media (max-width: 820px){
-      nav ul{ gap: 10px; }
-    }
-
-    /* Tiny flourish */
-    .glow{
-      position: absolute;
-      inset: -2px;
-      border-radius: inherit;
-      background: radial-gradient(600px 200px at 20% -20%, rgba(122,224,255,.18), transparent 50%),
-                  radial-gradient(600px 200px at 120% 0%, rgba(179,136,255,.15), transparent 52%);
-      z-index: -1;
-      filter: blur(10px);
+      background: linear-gradient(90deg, rgba(124, 92, 255, 0.2), rgba(34, 211, 238, 0.2));
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      text-transform: uppercase;
+      color: var(--text);
     }
 
     .name-highlight {
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-}
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
 
+    .surface {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
 
+    .surface-soft {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: color-mix(in oklab, var(--bg) 80%, transparent);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-weight: 800;
+      font-size: clamp(17px, 2vw, 21px);
+      color: var(--text);
+    }
+
+    .brand::before {
+      content: "";
+      width: 12px;
+      aspect-ratio: 1;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      box-shadow: 0 0 0 6px rgba(124, 92, 255, 0.16);
+      display: inline-block;
+    }
+
+    .menu-group-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .menu-segment {
+      padding: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 999px;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .menu-segment-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      padding: 4px 10px;
+      letter-spacing: 0.2px;
+    }
+
+    .menu-segment a {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+
+    .menu-segment a:hover,
+    .menu-segment a.active {
+      background: linear-gradient(135deg, rgba(124, 92, 255, 0.22), rgba(34, 211, 238, 0.20));
+      transform: translateY(-1px);
+    }
+
+    .btn-cta {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 0;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(35, 44, 84, 0.28);
+      font-size: 14px;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .btn-cta:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding-top: 26px;
+      padding-bottom: 54px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .hero-copy,
+    .hero-meta {
+      padding: clamp(18px, 2.7vw, 24px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after,
+    .hero-copy::after,
+    .hero-meta::after {
+      content: "";
+      position: absolute;
+      inset: auto -35% -45% auto;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 92, 255, 0.18), transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-copy > *,
+    .hero-meta > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      line-height: 1.08;
+      font-size: clamp(34px, 5.1vw, 56px);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 12px;
+      color: var(--text-dim);
+      font-size: clamp(14px, 2vw, 18px);
+    }
+
+    .hero p {
+      color: var(--text);
+      margin: 12px 0 0;
+      max-width: 65ch;
+    }
+
+    .metrics {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.18);
+      margin-left: 8px;
+    }
+
+    .metric-value {
+      font-weight: 800;
+      font-size: 26px;
+      background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      color: var(--text-dim);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      font-weight: 700;
+    }
+
+    .quick-links {
+      list-style: none;
+      margin: 16px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .quick-links li {
+      background: var(--panel-soft);
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 11px;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    .quick-links strong {
+      color: var(--text);
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    .hero-meta {
+      display: grid;
+      align-content: center;
+      gap: 12px;
+      background: linear-gradient(160deg, rgba(124, 92, 255, 0.16), rgba(16, 185, 129, 0.08));
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .meta-title {
+      margin: 0;
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    .meta-item {
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .contact-pill {
+      margin-top: 6px;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      display: inline-block;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    .about,
+    .research,
+    .publications {
+      padding-top: 10px;
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+      font-size: 27px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      color: var(--text-dim);
+      margin: 0 0 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.two-col {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+      padding: 18px 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--text-dim);
+    }
+
+    .skill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      padding: 7px 11px;
+      margin: 0 8px 8px 0;
+      font-size: 13px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .pub-layout {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr;
+    }
+
+    .pub-category {
+      padding: 16px;
+    }
+
+    .pub-category h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .pub-item {
+      margin: 0 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.14);
+    }
+
+    .pub-item:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .pub-meta {
+      color: var(--accent-2);
+      font-weight: 700;
+      margin: 0 0 6px;
+      display: inline-block;
+    }
+
+    .pub-item a {
+      color: var(--accent-4);
+      text-underline-offset: 2px;
+    }
+
+    footer {
+      padding-bottom: 30px;
+    }
+
+    .footer-band {
+      border-top: 1px dashed var(--border);
+      margin-top: 4px;
+      padding-top: 20px;
+      text-align: center;
+      color: var(--text-dim);
+      display: grid;
+      gap: 4px;
+    }
+
+    .footer-band a {
+      color: var(--accent-2);
+      font-weight: 600;
+    }
+
+    .updated {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .grid.two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      .menu-group-wrap {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .menu-group-wrap {
+        width: 100%;
+      }
+
+      .menu-segment {
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        padding: 5px 6px;
+      }
+
+      .menu-segment-title {
+        display: none;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-meta {
+        padding: 14px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .menu-segment a,
+      .btn-cta,
+      .pub-item a {
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      .menu-segment a:hover,
+      .btn-cta:hover,
+      .pub-item a:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+    }
   </style>
 </head>
 <body>
-
-  <!-- Header with right-aligned menu -->
   <header>
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Home">
-        <span class="dot" aria-hidden="true"></span>
-        <span>Arnav&nbsp;Mukhopadhyay</span>
-      </a>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a class="primary" href="#home">Home</a></li>
-          <li><a href="#publications">Publications</a></li>
-        </ul>
-      </nav>
+    <div class="container topbar">
+      <a class="brand" href="#home">Arnav Mukhopadhyay</a>
+      <div class="menu-group-wrap">
+        <nav class="menu-segment" aria-label="Primary">
+          <span class="menu-segment-title">Profile</span>
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+        </nav>
+        <nav class="menu-segment" aria-label="Research content">
+          <span class="menu-segment-title">Research</span>
+          <a href="#research">Research Areas</a>
+          <a href="#publications">Publications</a>
+        </nav>
+        <a class="btn-cta" href="#contact">Contact</a>
+      </div>
     </div>
   </header>
 
-  <!-- Main content -->
-  <main id="home" class="container">
-    <section class="hero">
-      <div class="card" role="region" aria-labelledby="intro-title" style="position:relative;">
-        <div class="glow" aria-hidden="true"></div>
-        <span class="badge">PhD Researcher</span>
-        <h1 id="intro-title">Arnav Mukhopadhyay</h1>
-        <p class="subtitle">國立中山大學 National Sun Yat-sen University · Kaohsiung, Taiwan</p>
+  <main class="container">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <article class="surface hero-copy">
+        <span class="chip">PhD Researcher</span>
+        <h1 id="hero-title">Arnav Mukhopadhyay</h1>
+        <p class="subtitle">
+          National Sun Yat-sen University, Kaohsiung, Taiwan
+        </p>
         <p>
-          I’m a PhD researcher focusing on wireless communications, optimization, and AI-driven networking.
-          This page lists my selected publications and contact details. Thanks for visiting!
+          I study wireless communications, optimization, and AI-driven networking, with a focus on
+          next-generation communication systems. This site curates my publications and highlights from
+          research activities across information theory, signal processing, and 6G network design.
         </p>
+
+        <div class="metrics" aria-label="Research highlights">
+          <div class="metric">
+            <span class="metric-value">6G</span>
+            <span class="metric-label">Research Domain</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">IEEE</span>
+            <span class="metric-label">Peer-reviewed Focus</span>
+          </div>
+        </div>
+
+        <ul class="quick-links">
+          <li><strong>Interests:</strong> Wireless AI, network optimization, near-field communication</li>
+          <li><strong>Approach:</strong> Theory-driven models backed by practical system insights</li>
+        </ul>
+      </article>
+
+      <aside class="hero-meta" aria-label="Quick profile">
+        <h2 class="meta-title">Research at a glance</h2>
+        <p class="meta-item">National Sun Yat-sen University (NSYSU)</p>
+        <p class="meta-item">Kaohsiung, Taiwan</p>
+        <p class="meta-item">Specialized in wireless and AI-enhanced network design</p>
+        <a href="#contact" class="contact-pill">Email for collaboration</a>
+      </aside>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">About Me</h2>
+      <p class="section-subtitle">
+        I am a PhD researcher working at the intersection of communication theory and AI. My long-term goal is
+        to build efficient networking methods that perform reliably in difficult propagation environments.
+      </p>
+      <div class="grid two-col">
+        <article class="surface card">
+          <h3>Academic Identity</h3>
+          <p>
+            This page presents selected publications and key milestones in my research journey, including
+            survey work and conference contributions.
+          </p>
+        </article>
+        <article class="surface card">
+          <h3>Core Focus Areas</h3>
+          <div>
+            <span class="skill">Wireless Communications</span>
+            <span class="skill">Optimization</span>
+            <span class="skill">6G Systems</span>
+            <span class="skill">Machine Learning for Networking</span>
+            <span class="skill">Near-field Design</span>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="publications" aria-labelledby="pubs-title">
-      <h2 id="pubs-title" class="section-title">First Authored Publications</h2>
-      <div class="panel">
-        <div class="pub-subtitle">Surveys &amp; Tutorials</div>
-        <p class="pub-item">
-          [S.2025-1] <span class="name-highlight">A. Mukhopadhyay</span>, K. Singh, F.-S. Tseng, S. K. Singh, K. Dev and C. Pan, 
-          "A Tutorial on Near-Field Driven 6G Networks," in <em>IEEE Commun. Survs. Tuts.</em>, 2025 (<i>early</i>).
-          doi: <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener">10.1109/COMST.2025.3550118</a>. 
-          (Q1 JIF-2025: 46.7)
-        </p>
+    <section class="research" id="research" aria-labelledby="research-title">
+      <h2 class="section-title" id="research-title">Research Themes</h2>
+      <div class="grid two-col">
+        <article class="surface card">
+          <h3>Near-Field Networking</h3>
+          <p>
+            Exploring channel behavior and transceiver methods for near-field-driven networks, especially in
+            emerging high-frequency deployments.
+          </p>
+        </article>
+        <article class="surface card">
+          <h3>AI and Optimization</h3>
+          <p>
+            Applying optimization-aware learning methods to improve network planning, scheduling, and reliability
+            under constrained resources.
+          </p>
+        </article>
       </div>
     </section>
 
-<section id="publications" aria-labelledby="pubs-title">
-  <h2 id="pubs-title" class="section-title">Co-authored Publications</h2>
-  <div class="panel">
-    <div class="pub-subtitle">Conference Papers </div>
+    <section class="publications" id="publications" aria-labelledby="pub-title">
+      <h2 class="section-title" id="pub-title">Publications</h2>
+      <p class="section-subtitle">Categorized by authorship role for quick review.</p>
+      <div class="pub-layout">
+        <article class="surface pub-category">
+          <h3>First-Authored</h3>
+          <p class="pub-item">
+            <span class="pub-meta">[S.2025-1]</span>
+            <span class="name-highlight">A. Mukhopadhyay</span>, K. Singh, F.-S. Tseng, S. K. Singh, K. Dev and C. Pan,
+            <em>"A Tutorial on Near-Field Driven 6G Networks"</em>, <em>IEEE Commun. Survs. Tuts.</em>, 2025 (<i>early</i>).
+            doi:
+            <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener">10.1109/COMST.2025.3550118</a>.
+            (Q1 JIF-2025: 46.7)
+          </p>
+        </article>
 
-    <p class="pub-item">
-      [C.2018-1] R. B. Chaudhuri, <span class="name-highlight">A. Mukhopadhyay</span>, A. Bogoni, and A. D. Barman, 
-      "Software Defined Optically Generated Pre-coded QPSK Modulated Microwave Signal," 
-      in <em>Proc. IEEE MTT-S Int. Microw. RF Conf. (IMaRC)</em>, 2018, pp. 1–3, 
-      doi: <a href="https://doi.org/10.1109/IMaRC.2018.8877238" target="_blank" rel="noopener">
-      10.1109/IMaRC.2018.8877238</a>.
-    </p>
-
-    <p class="pub-item">
-      [C.2018-2] R. B. Chaudhuri, <span class="name-highlight">A. Mukhopadhyay</span>, and A. D. Barman, 
-      "Linearity analysis of a frequency tripled optically generated radio frequency signal," 
-      in <em>Proc. Int. Conf. Microw. Photon. (ICMAP)</em>, 2018, pp. 1–2, 
-      doi: <a href="https://doi.org/10.1109/ICMAP.2018.8354513" target="_blank" rel="noopener">
-      10.1109/ICMAP.2018.8354513</a>.
-    </p>
-
-  </div>
-</section>
-
-
+        <article class="surface pub-category">
+          <h3>Co-authored</h3>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2018-1]</span>
+            R. B. Chaudhuri, <span class="name-highlight">A. Mukhopadhyay</span>, A. Bogoni, and A. D. Barman,
+            <em>"Software Defined Optically Generated Pre-coded QPSK Modulated Microwave Signal"</em>,
+            in <em>Proc. IEEE MTT-S Int. Microw. RF Conf. (IMaRC)</em>, 2018, pp. 1–3,
+            doi:
+            <a href="https://doi.org/10.1109/IMaRC.2018.8877238" target="_blank" rel="noopener">
+              10.1109/IMaRC.2018.8877238
+            </a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2018-2]</span>
+            R. B. Chaudhuri, <span class="name-highlight">A. Mukhopadhyay</span>, and A. D. Barman,
+            <em>"Linearity analysis of a frequency tripled optically generated radio frequency signal"</em>,
+            in <em>Proc. Int. Conf. Microw. Photon. (ICMAP)</em>, 2018, pp. 1–2,
+            doi:
+            <a href="https://doi.org/10.1109/ICMAP.2018.8354513" target="_blank" rel="noopener">
+              10.1109/ICMAP.2018.8354513
+            </a>.
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="container" id="contact" role="contentinfo">
-    <hr />
-    <div class="contact">
+  <footer class="container" id="contact">
+    <div class="footer-band">
       <div><strong>Contact</strong></div>
-      <div>Email: <span>gudduarnav</span> <span>at</span> <span>gmail</span> <span>dot</span> <span>com</span></div>
-      <div>國立中山大學 National Sun Yat-sen University, Kaohsiung, Taiwan</div>
-    </div>
-    <div class="contact">
-      <div><strong>Updated on 2025-08-21</strong></div>
+      <div>Email: <span>gudduarnav</span> at <span>gmail</span> dot <span>com</span></div>
+      <div>National Sun Yat-sen University · Kaohsiung, Taiwan</div>
+      <div class="updated">Updated on 2026-05-07</div>
     </div>
   </footer>
 
+  <script>
+    const navLinks = [...document.querySelectorAll('.menu-segment a')];
+    const sections = [...document.querySelectorAll('section[id]')];
+
+    const clearActive = () => navLinks.forEach((link) => link.classList.remove('active'));
+
+    const setActiveByHash = () => {
+      const currentHash = window.location.hash || '#home';
+      const activeHash = navLinks.find((link) => link.getAttribute('href') === currentHash);
+      clearActive();
+      if (activeHash) {
+        activeHash.classList.add('active');
+      } else {
+        document.querySelector('.menu-segment a[href="#home"]')?.classList.add('active');
+      }
+    };
+
+    const updateActiveOnScroll = () => {
+      const pageY = window.scrollY + 140;
+      let activeSection = '#home';
+
+      for (const section of sections) {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        if (pageY >= top && pageY < top + height) {
+          activeSection = `#${section.id}`;
+          break;
+        }
+      }
+
+      clearActive();
+      const match = navLinks.find((link) => link.getAttribute('href') === activeSection);
+      if (match) {
+        match.classList.add('active');
+      } else {
+        document.querySelector('.menu-segment a[href="#home"]')?.classList.add('active');
+      }
+    };
+
+    window.addEventListener('hashchange', setActiveByHash);
+    window.addEventListener('scroll', updateActiveOnScroll, { passive: true });
+    setActiveByHash();
+    updateActiveOnScroll();
+  </script>
 </body>
 </html>
