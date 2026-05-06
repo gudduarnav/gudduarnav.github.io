@@ -227,6 +227,35 @@
       transform: translateY(-1px);
     }
 
+    .menu-segment.menu-external {
+      background: rgba(16, 185, 129, 0.09);
+      border-color: rgba(16, 185, 129, 0.22);
+    }
+
+    .menu-segment.menu-external .menu-segment-title {
+      color: #93ffc7;
+    }
+
+    .menu-segment a[data-external="true"] {
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .menu-segment a[data-external="true"]:hover,
+    .menu-segment a[data-external="true"].active {
+      border-color: rgba(255, 255, 255, 0.28);
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(34, 211, 238, 0.18));
+    }
+
+    .menu-divider {
+      width: 1px;
+      align-self: stretch;
+      background: var(--border);
+      border-radius: 999px;
+      opacity: 0.6;
+      margin: 6px 0;
+    }
+
     main {
       padding-top: 26px;
       padding-bottom: 54px;
@@ -467,6 +496,142 @@
       text-underline-offset: 2px;
     }
 
+    .profile-strip {
+      margin: 16px 0 4px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 14px;
+    }
+
+    .profile-panels {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .profile-panels .surface.card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-panels .surface.card::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      right: -80px;
+      top: -55px;
+      background: radial-gradient(circle, rgba(124, 92, 255, 0.18), transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .profile-panels .surface.card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile-panels .surface.card:nth-child(1) {
+      border-top: 4px solid #7c5cff;
+    }
+
+    .profile-panels .surface.card:nth-child(2) {
+      border-top: 4px solid #34d399;
+    }
+
+    .profile-panels .surface.card:nth-child(3) {
+      border-top: 4px solid #f59e0b;
+    }
+
+    .profile-meta {
+      color: var(--text-dim);
+      margin: 4px 0 10px;
+    }
+
+    .profile-meta strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .profile-link-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      margin: 8px 0 0;
+    }
+
+    .profile-link-row a::after {
+      content: "↗";
+      color: var(--accent-2);
+      font-size: 12px;
+      margin-left: 6px;
+    }
+
+    .profile-metrics {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .metric-card {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .metric-card .value {
+      display: block;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 3px;
+    }
+
+    .metric-card .metric-sub {
+      color: var(--text-dim);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+      font-weight: 700;
+    }
+
+    .profile-strip a,
+    .ieee-meta {
+      display: inline-block;
+    }
+
+    section,
+    footer[id] {
+      scroll-margin-top: 100px;
+    }
+
+    .ieee-meta {
+      font-size: 14px;
+      color: var(--text-dim);
+    }
+
+    .profile-link-pill {
+      margin-top: 10px;
+      width: fit-content;
+      text-align: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(35, 44, 84, 0.28);
+    }
+
     footer {
       padding-bottom: 30px;
     }
@@ -505,9 +670,18 @@
         align-items: flex-start;
       }
 
-      .menu-group-wrap {
+    .menu-group-wrap {
         width: 100%;
         justify-content: flex-start;
+      }
+
+      .menu-divider {
+        display: none;
+      }
+
+      .profile-panels,
+      .profile-metrics {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -538,6 +712,10 @@
       .section-title {
         font-size: 24px;
       }
+
+      .profile-strip {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -557,21 +735,33 @@
   </style>
 </head>
 <body>
-  <header>
+    <header>
     <div class="container topbar">
       <a class="brand" href="#home">Arnav Mukhopadhyay</a>
       <div class="menu-group-wrap">
         <nav class="menu-segment" aria-label="Primary">
-          <span class="menu-segment-title">Profile</span>
+          <span class="menu-segment-title">Navigation</span>
           <a href="#home" class="active">Home</a>
           <a href="#about">About</a>
-        </nav>
-        <nav class="menu-segment" aria-label="Research content">
-          <span class="menu-segment-title">Research</span>
-          <a href="#research">Research Areas</a>
+          <a href="#research">Research</a>
           <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <a class="btn-cta" href="#contact">Contact</a>
+        <div class="menu-divider" aria-hidden="true"></div>
+        <nav class="menu-segment" aria-label="Research visibility">
+          <span class="menu-segment-title">Research Identity</span>
+          <a href="#ieee-profile">IEEE</a>
+          <a href="#profiles">Profile Links</a>
+          <a href="#orcid-profile">ORCID</a>
+          <a href="#scholar-profile">Scholar</a>
+        </nav>
+        <div class="menu-divider" aria-hidden="true"></div>
+        <nav class="menu-segment menu-external" aria-label="External profiles">
+          <span class="menu-segment-title">Live Profiles</span>
+          <a href="https://ieeexplore.ieee.org/author/37087052296" target="_blank" rel="noopener noreferrer" data-external="true">IEEE</a>
+          <a href="https://orcid.org/0000-0002-8167-7501" target="_blank" rel="noopener noreferrer" data-external="true">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=HdMekI8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" data-external="true">Scholar</a>
+        </nav>
       </div>
     </div>
   </header>
@@ -643,6 +833,99 @@
       </div>
     </section>
 
+    <section class="about" id="profiles" aria-labelledby="profiles-title">
+      <h2 class="section-title" id="profiles-title">Research Profiles</h2>
+      <p class="section-subtitle">
+        Verified public profile hubs are linked below to keep your research footprint consistent across indexing systems.
+      </p>
+      <div class="profile-panels">
+        <article class="surface card" id="orcid-profile">
+          <h3>ORCID</h3>
+          <p class="profile-meta">
+            ID: <strong>0000-0002-8167-7501</strong><br />
+            Name: <strong>Arnav Mukhopadhyay</strong>
+          </p>
+          <p class="profile-meta">
+            Current affiliation: <strong>National Sun Yat-sen University</strong> (Kaohsiung)
+          </p>
+          <div class="profile-metrics">
+            <div class="metric-card">
+              <span class="value">10</span>
+              <span class="metric-sub">Works</span>
+            </div>
+            <div class="metric-card">
+              <span class="value">9</span>
+              <span class="metric-sub">Keywords</span>
+            </div>
+            <div class="metric-card">
+              <span class="value">2026</span>
+              <span class="metric-sub">Latest Year</span>
+            </div>
+          </div>
+          <div class="profile-meta">
+            Focus tags:
+            <span class="skill">Wireless Communications</span>
+            <span class="skill">6G</span>
+            <span class="skill">Optimization</span>
+            <span class="skill">RIS</span>
+            <span class="skill">ELAA</span>
+            <span class="skill">Near field communications</span>
+          </div>
+          <div class="profile-link-row">
+            <a href="https://orcid.org/0000-0002-8167-7501" target="_blank" rel="noopener noreferrer">
+              Open ORCID profile
+            </a>
+          </div>
+        </article>
+
+        <article class="surface card" id="scholar-profile">
+          <h3>Google Scholar</h3>
+          <p class="profile-meta">
+            Profile ID: <strong>HdMekI8AAAAJ</strong> · Last pulled: <strong>2026-05-07</strong>
+          </p>
+          <div class="profile-metrics">
+            <div class="metric-card">
+              <span class="value">27</span>
+              <span class="metric-sub">Citations</span>
+            </div>
+            <div class="metric-card">
+              <span class="value">2</span>
+              <span class="metric-sub">h-index</span>
+            </div>
+            <div class="metric-card">
+              <span class="value">1</span>
+              <span class="metric-sub">i10-index</span>
+            </div>
+          </div>
+          <p class="pub-item">
+            <span class="pub-meta">Top cited</span>
+            <em>"A tutorial on near-field driven 6G networks"</em> (2025)
+            — <strong>22</strong> citations
+          </p>
+          <div class="profile-link-row">
+            <a href="https://scholar.google.com/citations?user=HdMekI8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+              Open Google Scholar profile
+            </a>
+          </div>
+        </article>
+
+        <article class="surface card">
+          <h3>IEEE</h3>
+          <p class="profile-meta">
+            Author ID: <strong>37087052296</strong>
+          </p>
+          <p class="profile-meta">
+            Publicly indexed source for IEEE journal and conference outputs.
+          </p>
+          <div class="profile-link-row">
+            <a href="https://ieeexplore.ieee.org/author/37087052296" target="_blank" rel="noopener noreferrer">
+              Open IEEE profile
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="research" id="research" aria-labelledby="research-title">
       <h2 class="section-title" id="research-title">Research Themes</h2>
       <div class="grid two-col">
@@ -663,6 +946,136 @@
       </div>
     </section>
 
+    <section class="publications" id="ieee-profile" aria-labelledby="ieee-title">
+      <h2 class="section-title" id="ieee-title">IEEE Profile Snapshot</h2>
+      <p class="section-subtitle">
+        Verified public IEEE-indexed publications with DOI links are listed below for quick sharing and
+        portfolio review.
+      </p>
+      <div class="profile-strip">
+        <article class="surface pub-category">
+          <h3>Author Identity</h3>
+          <p class="ieee-meta">IEEE Author ID: <strong>37087052296</strong></p>
+          <p class="ieee-meta">
+            Primary public profile:
+            <a href="https://ieeexplore.ieee.org/author/37087052296" target="_blank" rel="noopener noreferrer">
+              https://ieeexplore.ieee.org/author/37087052296
+            </a>
+          </p>
+          <a class="profile-link-pill" href="https://ieeexplore.ieee.org/author/37087052296" target="_blank" rel="noopener noreferrer">
+            Open IEEE profile
+          </a>
+        </article>
+        <article class="surface pub-category">
+          <h3>Quick Focus Signals</h3>
+          <p class="ieee-meta">Most recent public outputs: near-field wireless, RIS/NOMA, SWIPT, secure comms</p>
+          <p class="ieee-meta">Typical outlets: IEEE Trans. Comm., IEEE Trans. Wireless Commun., ICC, GLOBECOM, COMST</p>
+        </article>
+      </div>
+
+      <div class="pub-layout">
+        <article class="surface pub-category">
+          <h3>First-Authored (verified DOI)</h3>
+          <p class="pub-item">
+            <span class="pub-meta">[S.2026-1]</span>
+            <span class="name-highlight">Arnav Mukhopadhyay</span>, Keshav Singh, F.-S. Tseng, S. K. Singh, Kapal Dev, and C. Pan,
+            <em>"A Tutorial on Near-Field Driven 6G Networks"</em>, <em>IEEE Communications Surveys &amp; Tutorials</em>, 2026 (early).
+            doi:
+            <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener noreferrer">10.1109/COMST.2025.3550118</a>.
+            (Q1 JIF-2025: 46.7)
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[S.2026-2]</span>
+            <span class="name-highlight">Arnav Mukhopadhyay</span>, Keshav Singh, F.-S. Tseng, and K. Dev,
+            <em>"Secured Near-Field NOMA for ZED IoT Networks with SWIPT and Extremely Large-Scale Antennas"</em>,
+            <em>IEEE Transactions on Communications</em>, 2026.
+            doi:
+            <a href="https://doi.org/10.1109/TCOMM.2026.3658396" target="_blank" rel="noopener noreferrer">10.1109/TCOMM.2026.3658396</a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[S.2026-3]</span>
+            <span class="name-highlight">Arnav Mukhopadhyay</span>, Keshav Singh, F.-S. Tseng, and Y. Liu,
+            <em>"Multicast With Multi-Waveguide PASS via Position and Beam Co-Design"</em>,
+            <em>IEEE Transactions on Wireless Communications</em>, 2026.
+            doi:
+            <a href="https://doi.org/10.1109/TWC.2026.3680520" target="_blank" rel="noopener noreferrer">10.1109/TWC.2026.3680520</a>.
+          </p>
+        </article>
+
+        <article class="surface pub-category">
+          <h3>Co-authored (verified DOI)</h3>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2025-1]</span>
+            Sandeep Singh, <span class="name-highlight">Arnav Mukhopadhyay</span>, Raviteja Allu, Keshav Singh, and S. K. Singh,
+            <em>"Robust Resource Allocation for Secure Multiple Active RIS-Aided Full Duplex Communications"</em>,
+            <em>2025 International Symposium on Multimedia and Communications Technology (ISMAC)</em>, 2025.
+            doi:
+            <a href="https://doi.org/10.1109/ISMAC65024.2025.11175934" target="_blank" rel="noopener noreferrer">10.1109/ISMAC65024.2025.11175934</a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2018-1]</span>
+            R. B. Chaudhuri, <span class="name-highlight">Arnav Mukhopadhyay</span>, A. Bogoni, and A. D. Barman,
+            <em>"Software Defined Optically Generated Pre-coded QPSK Modulated Microwave Signal"</em>,
+            in <em>Proc. IEEE MTT-S Int. Microw. RF Conf. (IMaRC)</em>, 2018, pp. 1–3.
+            doi:
+            <a href="https://doi.org/10.1109/IMaRC.2018.8877238" target="_blank" rel="noopener noreferrer">
+              10.1109/IMaRC.2018.8877238
+            </a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2018-2]</span>
+            R. B. Chaudhuri, <span class="name-highlight">Arnav Mukhopadhyay</span>, and A. D. Barman,
+            <em>"Linearity analysis of a frequency tripled optically generated radio frequency signal"</em>,
+            in <em>Proc. Int. Conf. Microw. Photon. (ICMAP)</em>, 2018, pp. 1–2.
+            doi:
+            <a href="https://doi.org/10.1109/ICMAP.2018.8354513" target="_blank" rel="noopener noreferrer">
+              10.1109/ICMAP.2018.8354513
+            </a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2025-2]</span>
+            Ani Rosyidah, Hasriyasni Mandalika, <span class="name-highlight">Arnav Mukhopadhyay</span>, Mayur Katwe, K. Singh, and C. Pan,
+            <em>"Joint Phase and Power Optimization in SIM-Assisted NOMA Downlink Systems"</em>,
+            <em>IEEE GLOBECOM 2025</em>, 2025.
+            doi:
+            <a href="https://doi.org/10.1109/GLOBECOM59602.2025.11432135" target="_blank" rel="noopener noreferrer">
+              10.1109/GLOBECOM59602.2025.11432135
+            </a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2025-3]</span>
+            Arnav Mukhopadhyay, Mayur V. Katwe, Keshav Singh, F.-S. Tseng, and Shahid Mumtaz,
+            <em>"Near-Field Beam Sharing and Energy Harvesting in RIS-Assisted NOMA Networks"</em>,
+            <em>IEEE ICC 2025</em>, 2025.
+            doi:
+            <a href="https://doi.org/10.1109/ICC52391.2025.11162026" target="_blank" rel="noopener noreferrer">
+              10.1109/ICC52391.2025.11162026
+            </a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2025-4]</span>
+            Arnav Mukhopadhyay, Mayur V. Katwe, Keshav Singh, Aryan Kaushik, and F.-S. Tseng,
+            <em>"Near-Field Secure Communications with NOMA-Assisted SWIPT Systems"</em>,
+            <em>IEEE ICC 2025</em>, 2025.
+            doi:
+            <a href="https://doi.org/10.1109/ICC52391.2025.11161404" target="_blank" rel="noopener noreferrer">
+              10.1109/ICC52391.2025.11161404
+            </a>.
+          </p>
+          <p class="pub-item">
+            <span class="pub-meta">[C.2025-5]</span>
+            Ruby Jane Pedronan Agullana, Keshav Singh, <span class="name-highlight">Arnav Mukhopadhyay</span>, Hyundong Shin, and Trung Q. Duong,
+            <em>"Active Reconfigurable Intelligent Surface Assisted Near-Field Covert-Overt Communications"</em>,
+            <em>IEEE GLOBECOM 2025</em>, 2025.
+            doi:
+            <a href="https://doi.org/10.1109/GLOBECOM59602.2025.11431934" target="_blank" rel="noopener noreferrer">
+              10.1109/GLOBECOM59602.2025.11431934
+            </a>.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section class="publications" id="publications" aria-labelledby="pub-title">
       <h2 class="section-title" id="pub-title">Publications</h2>
       <p class="section-subtitle">Categorized by authorship role for quick review.</p>
@@ -674,7 +1087,7 @@
             <span class="name-highlight">A. Mukhopadhyay</span>, K. Singh, F.-S. Tseng, S. K. Singh, K. Dev and C. Pan,
             <em>"A Tutorial on Near-Field Driven 6G Networks"</em>, <em>IEEE Commun. Survs. Tuts.</em>, 2025 (<i>early</i>).
             doi:
-            <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener">10.1109/COMST.2025.3550118</a>.
+            <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener noreferrer">10.1109/COMST.2025.3550118</a>.
             (Q1 JIF-2025: 46.7)
           </p>
         </article>
@@ -687,7 +1100,7 @@
             <em>"Software Defined Optically Generated Pre-coded QPSK Modulated Microwave Signal"</em>,
             in <em>Proc. IEEE MTT-S Int. Microw. RF Conf. (IMaRC)</em>, 2018, pp. 1–3,
             doi:
-            <a href="https://doi.org/10.1109/IMaRC.2018.8877238" target="_blank" rel="noopener">
+            <a href="https://doi.org/10.1109/IMaRC.2018.8877238" target="_blank" rel="noopener noreferrer">
               10.1109/IMaRC.2018.8877238
             </a>.
           </p>
@@ -697,7 +1110,7 @@
             <em>"Linearity analysis of a frequency tripled optically generated radio frequency signal"</em>,
             in <em>Proc. Int. Conf. Microw. Photon. (ICMAP)</em>, 2018, pp. 1–2,
             doi:
-            <a href="https://doi.org/10.1109/ICMAP.2018.8354513" target="_blank" rel="noopener">
+            <a href="https://doi.org/10.1109/ICMAP.2018.8354513" target="_blank" rel="noopener noreferrer">
               10.1109/ICMAP.2018.8354513
             </a>.
           </p>
@@ -709,7 +1122,7 @@
   <footer class="container" id="contact">
     <div class="footer-band">
       <div><strong>Contact</strong></div>
-      <div>Email: <span>gudduarnav</span> at <span>gmail</span> dot <span>com</span></div>
+      <div>Email: <a href="mailto:gudduarnav@gmail.com">gudduarnav@gmail.com</a></div>
       <div>National Sun Yat-sen University · Kaohsiung, Taiwan</div>
       <div class="updated">Updated on 2026-05-07</div>
     </div>
@@ -717,7 +1130,7 @@
 
   <script>
     const navLinks = [...document.querySelectorAll('.menu-segment a')];
-    const sections = [...document.querySelectorAll('section[id]')];
+    const sections = [...document.querySelectorAll('section[id], article[id], footer[id]')];
 
     const clearActive = () => navLinks.forEach((link) => link.classList.remove('active'));
 
