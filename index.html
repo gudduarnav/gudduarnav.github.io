@@ -604,6 +604,72 @@
       font-weight: 700;
     }
 
+    .timeline,
+    .role-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .timeline-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .timeline-item-title {
+      margin: 0;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .timeline-item-meta {
+      margin: 6px 0 0;
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    .timeline-item .timeline-meta-label {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 11px;
+      color: var(--accent-3);
+      font-weight: 700;
+      border: 1px solid rgba(52, 211, 153, 0.4);
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: rgba(52, 211, 153, 0.1);
+    }
+
+    .timeline-item-empty {
+      border-style: dashed;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    .timeline-note {
+      margin: 0 0 10px;
+    }
+
+    .role-pill {
+      margin-top: 8px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(124, 92, 255, 0.16);
+      border: 1px solid rgba(124, 92, 255, 0.28);
+      color: var(--text);
+      font-size: 11px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
     .profile-strip a,
     .ieee-meta {
       display: inline-block;
@@ -743,6 +809,8 @@
           <span class="menu-segment-title">Navigation</span>
           <a href="#home" class="active">Home</a>
           <a href="#about">About</a>
+          <a href="#credentials">Credentials</a>
+          <a href="#service-roles">Roles</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
@@ -760,7 +828,7 @@
           <span class="menu-segment-title">Live Profiles</span>
           <a href="https://ieeexplore.ieee.org/author/37087052296" target="_blank" rel="noopener noreferrer" data-external="true">IEEE</a>
           <a href="https://orcid.org/0000-0002-8167-7501" target="_blank" rel="noopener noreferrer" data-external="true">ORCID</a>
-          <a href="https://scholar.google.com/citations?user=HdMekI8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" data-external="true">Scholar</a>
+          <a href="https://scholar.google.com/citations?user=HdMekI8AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" data-external="true">Scholar</a>
         </nav>
       </div>
     </div>
@@ -850,7 +918,7 @@
           </p>
           <div class="profile-metrics">
             <div class="metric-card">
-              <span class="value">10</span>
+              <span class="value">11</span>
               <span class="metric-sub">Works</span>
             </div>
             <div class="metric-card">
@@ -903,7 +971,7 @@
             — <strong>22</strong> citations
           </p>
           <div class="profile-link-row">
-            <a href="https://scholar.google.com/citations?user=HdMekI8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+            <a href="https://scholar.google.com/citations?user=HdMekI8AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
               Open Google Scholar profile
             </a>
           </div>
@@ -922,6 +990,150 @@
               Open IEEE profile
             </a>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="credentials" aria-labelledby="credentials-title">
+      <h2 class="section-title" id="credentials-title">Credentials and Experience</h2>
+      <p class="section-subtitle">
+        Publicly visible background from ORCID: <strong>3 education entries</strong>,
+        <strong>2 qualification entries</strong>, and no listed employments.
+      </p>
+      <div class="grid two-col">
+        <article class="surface card">
+          <h3>Qualifications</h3>
+          <ul class="timeline" aria-label="Academic qualifications">
+            <li class="timeline-item">
+              <p class="timeline-item-title">
+                MCA
+                <span class="timeline-meta-label">2021–2023</span>
+              </p>
+              <p class="timeline-item-meta">
+                University of Mysore — UoM Online
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-item-title">
+                B.Tech.
+                <span class="timeline-meta-label">2013–2016</span>
+              </p>
+              <p class="timeline-item-meta">
+                University of Calcutta — Institute of Radio Physics and Electronics
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="surface card">
+          <h3>Education</h3>
+          <ul class="timeline" aria-label="Education summary">
+            <li class="timeline-item">
+              <p class="timeline-item-title">
+                PhD (Research)
+                <span class="timeline-meta-label">2023–2026</span>
+              </p>
+              <p class="timeline-item-meta">
+                Institute of Communications Engineering, National Sun Yat-sen University
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-item-title">
+                M. Tech.
+                <span class="timeline-meta-label">2016–2018</span>
+              </p>
+              <p class="timeline-item-meta">
+                University of Calcutta — Radio Physics and Electronics
+              </p>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-item-title">
+                B.Sc. in Electronics Science
+                <span class="timeline-meta-label">2013–2016</span>
+              </p>
+              <p class="timeline-item-meta">
+                West Bengal State University — Acharya Prafulla Chandra College
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="surface card">
+          <h3>Work Experience</h3>
+          <p class="timeline-item timeline-item-empty timeline-note">
+            ORCID does not currently expose public employment records.
+          </p>
+          <ul class="timeline" aria-label="Work experience summary">
+            <li class="timeline-item timeline-item-empty">
+              Add verified roles manually (teaching assistantship, committee roles, industry internships, collaborations) when available.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="service-roles" aria-labelledby="roles-title">
+      <h2 class="section-title" id="roles-title">Roles and Service</h2>
+      <p class="section-subtitle">
+        ORCID-linked service records currently show peer review activity with <strong>31 reviews</strong>,
+        synced through Clarivate/Web of Science.
+      </p>
+      <div class="grid two-col">
+        <article class="surface card">
+          <h3>Reviewer (By Venue)</h3>
+          <div class="profile-metrics">
+            <div class="metric-card">
+              <span class="value">31</span>
+              <span class="metric-sub">Total Reviews</span>
+            </div>
+            <div class="metric-card">
+              <span class="value">6</span>
+              <span class="metric-sub">Venues</span>
+            </div>
+            <div class="metric-card">
+              <span class="value">2024–2026</span>
+              <span class="metric-sub">Years</span>
+            </div>
+          </div>
+          <ul class="role-list">
+            <li class="timeline-item">
+              IEEE Internet of Things Journal (ISSN 2327-4662) — 13 reviews (2024, 2025)
+            </li>
+            <li class="timeline-item">
+              IEEE Wireless Communications Letters (ISSN 2162-2345) — 7 reviews (2025, 2026)
+            </li>
+            <li class="timeline-item">
+              IEEE Transactions on Communications (ISSN 1558-0857) — 6 reviews (2025, 2026)
+            </li>
+            <li class="timeline-item">
+              IEEE Communications Letters (ISSN 1558-2558) — 2 reviews (2025)
+            </li>
+            <li class="timeline-item">
+              IEEE Transactions on Green Communications and Networking (ISSN 2473-2400) — 2 reviews (2024)
+            </li>
+            <li class="timeline-item">
+              Electronics Letters (ISSN 1350-911X) — 1 review (2026)
+            </li>
+          </ul>
+          <p class="profile-meta">
+            <span class="role-pill">Reviewer role verified via</span>
+            <a href="https://orcid.org/0000-0002-8167-7501" target="_blank" rel="noopener noreferrer">
+              ORCID profile
+            </a>
+          </p>
+        </article>
+
+        <article class="surface card">
+          <h3>Other ORCID Roles</h3>
+          <p class="timeline-item">
+            Invited positions, memberships, and services are currently not public in the ORCID record.
+          </p>
+          <p class="timeline-item">Add missing roles manually if you want them displayed on this page.</p>
+          <p class="profile-link-row">
+            <a href="https://orcid.org/0000-0002-8167-7501/peer-reviews" target="_blank" rel="noopener noreferrer">
+              View peer-review section
+            </a>
+          </p>
         </article>
       </div>
     </section>
@@ -972,115 +1184,10 @@
           <p class="ieee-meta">Typical outlets: IEEE Trans. Comm., IEEE Trans. Wireless Commun., ICC, GLOBECOM, COMST</p>
         </article>
       </div>
-
-      <div class="pub-layout">
-        <article class="surface pub-category">
-          <h3>First-Authored</h3>
-          <p class="pub-item">
-            <span class="pub-meta">[S.2026-1]</span>
-            <span class="name-highlight">Arnav Mukhopadhyay</span>, Keshav Singh, F.-S. Tseng, S. K. Singh, Kapal Dev, and C. Pan,
-            <em>"A Tutorial on Near-Field Driven 6G Networks"</em>, <em>IEEE Communications Surveys &amp; Tutorials</em>, 2026 (early).
-            doi:
-            <a href="https://doi.org/10.1109/COMST.2025.3550118" target="_blank" rel="noopener noreferrer">10.1109/COMST.2025.3550118</a>.
-            (Q1 JIF-2025: 46.7)
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[S.2026-2]</span>
-            <span class="name-highlight">Arnav Mukhopadhyay</span>, Keshav Singh, F.-S. Tseng, and K. Dev,
-            <em>"Secured Near-Field NOMA for ZED IoT Networks with SWIPT and Extremely Large-Scale Antennas"</em>,
-            <em>IEEE Transactions on Communications</em>, 2026.
-            doi:
-            <a href="https://doi.org/10.1109/TCOMM.2026.3658396" target="_blank" rel="noopener noreferrer">10.1109/TCOMM.2026.3658396</a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[S.2026-3]</span>
-            <span class="name-highlight">Arnav Mukhopadhyay</span>, Keshav Singh, F.-S. Tseng, and Y. Liu,
-            <em>"Multicast With Multi-Waveguide PASS via Position and Beam Co-Design"</em>,
-            <em>IEEE Transactions on Wireless Communications</em>, 2026.
-            doi:
-            <a href="https://doi.org/10.1109/TWC.2026.3680520" target="_blank" rel="noopener noreferrer">10.1109/TWC.2026.3680520</a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[S.2025-3]</span>
-            <span class="name-highlight">Arnav Mukhopadhyay</span>, Mayur V. Katwe, Keshav Singh, and F.-S. Tseng,
-            <em>"Near-Field Beam Sharing and Energy Harvesting in RIS-Assisted NOMA Networks"</em>,
-            <em>IEEE ICC 2025</em>, 2025.
-            doi:
-            <a href="https://doi.org/10.1109/ICC52391.2025.11162026" target="_blank" rel="noopener noreferrer">
-              10.1109/ICC52391.2025.11162026
-            </a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[S.2025-4]</span>
-            <span class="name-highlight">Arnav Mukhopadhyay</span>, Mayur V. Katwe, Keshav Singh, Aryan Kaushik, and F.-S. Tseng,
-            <em>"Near-Field Secure Communications with NOMA-Assisted SWIPT Systems"</em>,
-            <em>IEEE ICC 2025</em>, 2025.
-            doi:
-            <a href="https://doi.org/10.1109/ICC52391.2025.11161404" target="_blank" rel="noopener noreferrer">
-              10.1109/ICC52391.2025.11161404
-            </a>.
-          </p>
-        </article>
-
-        <article class="surface pub-category">
-          <h3>Co-Authored</h3>
-          <p class="pub-item">
-            <span class="pub-meta">[C.2025-1]</span>
-            Sandeep Singh, <span class="name-highlight">Arnav Mukhopadhyay</span>, Raviteja Allu, Keshav Singh, and S. K. Singh,
-            <em>"Robust Resource Allocation for Secure Multiple Active RIS-Aided Full Duplex Communications"</em>,
-            <em>2025 International Symposium on Multimedia and Communications Technology (ISMAC)</em>, 2025.
-            doi:
-            <a href="https://doi.org/10.1109/ISMAC65024.2025.11175934" target="_blank" rel="noopener noreferrer">10.1109/ISMAC65024.2025.11175934</a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[C.2018-1]</span>
-            R. B. Chaudhuri, <span class="name-highlight">Arnav Mukhopadhyay</span>, A. Bogoni, and A. D. Barman,
-            <em>"Software Defined Optically Generated Pre-coded QPSK Modulated Microwave Signal"</em>,
-            in <em>Proc. IEEE MTT-S Int. Microw. RF Conf. (IMaRC)</em>, 2018, pp. 1–3.
-            doi:
-            <a href="https://doi.org/10.1109/IMaRC.2018.8877238" target="_blank" rel="noopener noreferrer">
-              10.1109/IMaRC.2018.8877238
-            </a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[C.2018-2]</span>
-            R. B. Chaudhuri, <span class="name-highlight">Arnav Mukhopadhyay</span>, and A. D. Barman,
-            <em>"Linearity analysis of a frequency tripled optically generated radio frequency signal"</em>,
-            in <em>Proc. Int. Conf. Microw. Photon. (ICMAP)</em>, 2018, pp. 1–2.
-            doi:
-            <a href="https://doi.org/10.1109/ICMAP.2018.8354513" target="_blank" rel="noopener noreferrer">
-              10.1109/ICMAP.2018.8354513
-            </a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[C.2025-2]</span>
-            Ani Rosyidah, Hasriyasni Mandalika, <span class="name-highlight">Arnav Mukhopadhyay</span>, Mayur Katwe, K. Singh, and C. Pan,
-            <em>"Joint Phase and Power Optimization in SIM-Assisted NOMA Downlink Systems"</em>,
-            <em>IEEE GLOBECOM 2025</em>, 2025.
-            doi:
-            <a href="https://doi.org/10.1109/GLOBECOM59602.2025.11432135" target="_blank" rel="noopener noreferrer">
-              10.1109/GLOBECOM59602.2025.11432135
-            </a>.
-          </p>
-          <p class="pub-item">
-            <span class="pub-meta">[C.2025-5]</span>
-            Ruby Jane Pedronan Agullana, Keshav Singh, <span class="name-highlight">Arnav Mukhopadhyay</span>, Hyundong Shin, and Trung Q. Duong,
-            <em>"Active Reconfigurable Intelligent Surface Assisted Near-Field Covert-Overt Communications"</em>,
-            <em>IEEE GLOBECOM 2025</em>, 2025.
-            doi:
-            <a href="https://doi.org/10.1109/GLOBECOM59602.2025.11431934" target="_blank" rel="noopener noreferrer">
-              10.1109/GLOBECOM59602.2025.11431934
-            </a>.
-          </p>
-        </article>
-      </div>
     </section>
 
     <section class="publications" id="publications" aria-labelledby="pub-title">
       <h2 class="section-title" id="pub-title">Publications</h2>
-      <p class="section-subtitle">
-        Authorship is assigned by lead position and verified against the profile-linked records.
-      </p>
       <div class="pub-layout">
         <article class="surface pub-category">
           <h3>First-Authored</h3>
