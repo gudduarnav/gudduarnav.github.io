@@ -1,0 +1,312 @@
+[
+  {
+    "title": {
+      "en": "Covert Near-Field Downlink Communication With Pinching-Antenna Systems",
+      "zh-TW": "夾持式天線系統的近場下行隱蔽通訊"
+    },
+    "authors": [
+      "Ruby Jane Pedronan Agullana",
+      "Arnav Mukhopadhyay",
+      "Anal Paul",
+      "Keshav Singh",
+      "Yun Hee Kim"
+    ],
+    "venue": {
+      "en": "IEEE Wireless Communications Letters, vol. 15, pp. 4718–4722, 2026.",
+      "zh-TW": "IEEE 無線通訊快報，第 15 卷，第 4718–4722 頁，2026 年。"
+    },
+    "doi": "10.1109/LWC.2026.3714504",
+    "type": "Journal",
+    "first": false,
+    "year": 2026
+  },
+  {
+    "title": {
+      "en": "Multicast With Multi-Waveguide PASS via Position and Beam Co-Design",
+      "zh-TW": "透過位置與波束聯合設計實現多波導夾持式天線系統多播"
+    },
+    "authors": [
+      "Arnav Mukhopadhyay",
+      "Keshav Singh",
+      "Fan-Shuo Tseng",
+      "Yuanwei Liu",
+      "Hyundong Shin"
+    ],
+    "venue": {
+      "en": "IEEE Transactions on Wireless Communications, vol. 25, pp. 15021–15038, 2026.",
+      "zh-TW": "IEEE 無線通訊學報，第 25 卷，第 15021–15038 頁，2026 年。"
+    },
+    "doi": "10.1109/TWC.2026.3680520",
+    "type": "Journal",
+    "first": true,
+    "year": 2026
+  },
+  {
+    "title": {
+      "en": "Secured Near-Field NOMA for ZED IoT Networks With SWIPT and Extremely Large-Scale Antennas",
+      "zh-TW": "結合無線資訊與能量同傳及超大規模天線的零能耗物聯網近場非正交多重存取安全通訊"
+    },
+    "authors": [
+      "Arnav Mukhopadhyay",
+      "Keshav Singh",
+      "Fan-Shuo Tseng",
+      "Kapal Dev",
+      "Cunhua Pan"
+    ],
+    "venue": {
+      "en": "IEEE Transactions on Communications, vol. 74, pp. 3919–3936, 2026.",
+      "zh-TW": "IEEE 通訊學報，第 74 卷，第 3919–3936 頁，2026 年。"
+    },
+    "doi": "10.1109/TCOMM.2026.3658396",
+    "type": "Journal",
+    "first": true,
+    "year": 2026
+  },
+  {
+    "title": {
+      "en": "A Tutorial on Near-Field Driven 6G Networks",
+      "zh-TW": "近場驅動的第六代行動通訊網路：教學綜述"
+    },
+    "authors": [
+      "Arnav Mukhopadhyay",
+      "Keshav Singh",
+      "Fan-Shuo Tseng",
+      "Sandeep Kumar Singh",
+      "Kapal Dev",
+      "Cunhua Pan"
+    ],
+    "venue": {
+      "en": "IEEE Communications Surveys & Tutorials, vol. 28, pp. 916–954, 2026.",
+      "zh-TW": "IEEE 通訊綜述與教學，第 28 卷，第 916–954 頁，2026 年。"
+    },
+    "doi": "10.1109/COMST.2025.3550118",
+    "type": "Survey",
+    "first": true,
+    "year": 2026
+  },
+  {
+    "title": {
+      "en": "Pinched Antenna Systems for Sustainable Net-Zero 6G Near-Field Wireless Communications",
+      "zh-TW": "邁向永續淨零排放第六代近場無線通訊的夾持式天線系統"
+    },
+    "authors": [
+      "Arnav Mukhopadhyay",
+      "Keshav Singh",
+      "Fan-Shuo Tseng",
+      "Kapal Dev",
+      "Hyundong Shin"
+    ],
+    "venue": {
+      "en": "IEEE Communications Magazine, vol. 64, no. 8, pp. 70–78, 2026.",
+      "zh-TW": "IEEE 通訊雜誌，第 64 卷第 8 期，第 70–78 頁，2026 年。"
+    },
+    "doi": "10.1109/MCOM.001.2500627",
+    "type": "Magazine",
+    "first": true,
+    "year": 2026
+  },
+  {
+    "title": {
+      "en": "Energy Efficient for Holographic RIS-aided NOMA Near-Field Short-Packet Communication System",
+      "zh-TW": "全像可重構智慧反射面輔助非正交多重存取近場短封包通訊系統的能源效率"
+    },
+    "authors": [
+      "Sandeep Singh",
+      "Keshav Singh",
+      "Fan-Shuo Tseng",
+      "Arnav Mukhopadhyay"
+    ],
+    "venue": {
+      "en": "IEEE Wireless Communications and Networking Conference (WCNC), pp. 1–6, 2026.",
+      "zh-TW": "IEEE 無線通訊與網路會議（WCNC），第 1–6 頁，2026 年。"
+    },
+    "doi": "10.1109/WCNC65185.2026.11555244",
+    "type": "Conference",
+    "first": false,
+    "year": 2026
+  },
+  {
+    "title": {
+      "en": "Near-Field Beam Sharing and Energy Harvesting in RIS-Assisted NOMA Networks",
+      "zh-TW": "可重構智慧反射面輔助非正交多重存取網路中的近場波束共享與能量擷取"
+    },
+    "authors": [
+      "Arnav Mukhopadhyay",
+      "Mayur V. Katwe",
+      "Keshav Singh",
+      "Fan-Shuo Tseng",
+      "Shahid Mumtaz"
+    ],
+    "venue": {
+      "en": "IEEE ICC, pp. 3630–3635, 2025.",
+      "zh-TW": "IEEE 國際通訊會議（ICC），第 3630–3635 頁，2025 年。"
+    },
+    "doi": "10.1109/ICC52391.2025.11162026",
+    "type": "Conference",
+    "first": true,
+    "year": 2025
+  },
+  {
+    "title": {
+      "en": "Near-Field Secure Communications with NOMA-Assisted SWIPT Systems",
+      "zh-TW": "非正交多重存取輔助無線資訊與能量同傳系統的近場安全通訊"
+    },
+    "authors": [
+      "Arnav Mukhopadhyay",
+      "Mayur V. Katwe",
+      "Keshav Singh",
+      "Aryan Kaushik",
+      "Fan-Shuo Tseng"
+    ],
+    "venue": {
+      "en": "IEEE ICC, pp. 5181–5186, 2025.",
+      "zh-TW": "IEEE 國際通訊會議（ICC），第 5181–5186 頁，2025 年。"
+    },
+    "doi": "10.1109/ICC52391.2025.11161404",
+    "type": "Conference",
+    "first": true,
+    "year": 2025
+  },
+  {
+    "title": {
+      "en": "Robust Resource Allocation for Secure Multiple Active RIS-Aided Full Duplex Communications",
+      "zh-TW": "多個主動式可重構智慧反射面輔助安全全雙工通訊的穩健資源配置"
+    },
+    "authors": [
+      "Sandeep Singh",
+      "Arnav Mukhopadhyay",
+      "Raviteja Allu",
+      "Keshav Singh",
+      "Sandeep Kumar Singh"
+    ],
+    "venue": {
+      "en": "International Symposium on Multimedia and Communications Technology (ISMAC), pp. 1–6, 2025.",
+      "zh-TW": "國際多媒體與通訊技術研討會（ISMAC），第 1–6 頁，2025 年。"
+    },
+    "doi": "10.1109/ISMAC65024.2025.11175934",
+    "type": "Conference",
+    "first": false,
+    "year": 2025
+  },
+  {
+    "title": {
+      "en": "Active Reconfigurable Intelligent Surface Assisted Near-Field Covert-Overt Communications",
+      "zh-TW": "主動式可重構智慧反射面輔助近場隱蔽與公開通訊"
+    },
+    "authors": [
+      "Ruby Jane Pedronan Agullana",
+      "Keshav Singh",
+      "Arnav Mukhopadhyay",
+      "Hyundong Shin",
+      "Trung Q. Duong"
+    ],
+    "venue": {
+      "en": "IEEE GLOBECOM, pp. 587–592, 2025.",
+      "zh-TW": "IEEE 全球通訊會議（GLOBECOM），第 587–592 頁，2025 年。"
+    },
+    "doi": "10.1109/GLOBECOM59602.2025.11431934",
+    "type": "Conference",
+    "first": false,
+    "year": 2025
+  },
+  {
+    "title": {
+      "en": "Joint Phase and Power Optimization in SIM-Assisted NOMA Downlink Systems",
+      "zh-TW": "堆疊式智慧超表面輔助非正交多重存取下行系統的相位與功率聯合最佳化"
+    },
+    "authors": [
+      "Ani Rosyidah",
+      "Hasriyasni Mandalika",
+      "Arnav Mukhopadhyay",
+      "Mayur Katwe",
+      "Keshav Singh",
+      "Cunhua Pan"
+    ],
+    "venue": {
+      "en": "IEEE GLOBECOM, pp. 6406–6411, 2025.",
+      "zh-TW": "IEEE 全球通訊會議（GLOBECOM），第 6406–6411 頁，2025 年。"
+    },
+    "doi": "10.1109/GLOBECOM59602.2025.11432135",
+    "type": "Conference",
+    "first": false,
+    "year": 2025
+  },
+  {
+    "title": {
+      "en": "Energy-Efficient Frequency Octupling Using Mach–Zehnder Optical Modulator",
+      "zh-TW": "利用馬赫–曾德爾光調變器實現高能源效率的八倍頻產生"
+    },
+    "authors": [
+      "Abhirup Das Barman",
+      "Arnav Mukhopadhyay",
+      "Antonella Bogoni"
+    ],
+    "venue": {
+      "en": "Computers and Devices for Communication · CODEC 2019, Lecture Notes in Networks and Systems, vol. 147, Springer, pp. 244–249, 2021.",
+      "zh-TW": "《通訊用電腦與元件》：CODEC 2019 會議論文集，《網路與系統講義叢書》第 147 卷，施普林格出版社，第 244–249 頁，2021 年。"
+    },
+    "doi": "10.1007/978-981-15-8366-7_34",
+    "type": "Proceedings chapter",
+    "first": false,
+    "year": 2021
+  },
+  {
+    "title": {
+      "en": "Design and analysis of all optical RF transceiver using polarization modulators",
+      "zh-TW": "使用偏振調變器的全光射頻收發器設計與分析"
+    },
+    "authors": [
+      "Rangana Banerjee Chaudhuri",
+      "Abhirup Das Barman",
+      "Arnav Mukhopadhyay",
+      "Antonella Bogoni"
+    ],
+    "venue": {
+      "en": "Optical and Quantum Electronics, vol. 52, no. 5, article 235, 2020.",
+      "zh-TW": "《光學與量子電子學》，第 52 卷第 5 期，文章編號 235，2020 年。"
+    },
+    "doi": "10.1007/s11082-020-02320-w",
+    "type": "Journal",
+    "first": false,
+    "year": 2020
+  },
+  {
+    "title": {
+      "en": "Software Defined Optically Generated Pre-coded QPSK Modulated Microwave Signal",
+      "zh-TW": "以軟體定義方式產生預編碼正交相移鍵控調變光生微波訊號"
+    },
+    "authors": [
+      "Rangana Banerjee Chaudhuri",
+      "Arnav Mukhopadhyay",
+      "Antonella Bogoni",
+      "Abhirup Das Barman"
+    ],
+    "venue": {
+      "en": "IEEE MTT-S IMaRC, pp. 1–3, 2018.",
+      "zh-TW": "IEEE 微波理論與技術學會國際微波與射頻會議（IMaRC），第 1–3 頁，2018 年。"
+    },
+    "doi": "10.1109/IMaRC.2018.8877238",
+    "type": "Conference",
+    "first": false,
+    "year": 2018
+  },
+  {
+    "title": {
+      "en": "Linearity analysis of a frequency tripled optically generated radio frequency signal",
+      "zh-TW": "光生三倍頻射頻訊號的線性度分析"
+    },
+    "authors": [
+      "Rangana Banerjee Chaudhuri",
+      "Arnav Mukhopadhyay",
+      "Abhirup Das Barman"
+    ],
+    "venue": {
+      "en": "International Conference on Microwave and Photonics, pp. 1–2, 2018.",
+      "zh-TW": "國際微波與光子學會議（ICMAP），第 1–2 頁，2018 年。"
+    },
+    "doi": "10.1109/ICMAP.2018.8354513",
+    "type": "Conference",
+    "first": false,
+    "year": 2018
+  }
+]
