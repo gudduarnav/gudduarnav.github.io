@@ -33,6 +33,7 @@ Open `http://localhost:8000/` or `http://localhost:8000/zh-tw/`. Commit generate
 - The MCA qualification and employment before VSM Aerospace are intentionally excluded at the owner's request. Do not reintroduce them from public profile imports.
 - Ph.D. remains in progress, expected March 2027, as confirmed by the owner on 22 September 2026.
 - Verify author order and publisher metadata before updating records. Citation counts remain on linked live profiles; peer-review counts are explicitly dated.
+- Cite official university announcements for university awards, with the institution's actual award wording.
 - Exclude phone numbers, street addresses, and private CV files. The existing `CV_Arnav.pdf` ignore rule must remain in place.
 
 See [the publication audit](docs/publication-audit-2026-09-22.md) and [verification notes](docs/verification.md).

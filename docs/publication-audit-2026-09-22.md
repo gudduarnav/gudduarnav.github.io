@@ -31,3 +31,9 @@ The owner confirmed in this session that the Ph.D. remains in progress with expe
 ## Localization
 
 English is the default route. The Traditional Chinese route uses `zh-TW`, Taiwan terminology, translated prose, publication titles, venue names, dates, navigation, and accessibility labels. Published personal names, software names, acronyms, and persistent identifiers keep their official spelling. A Chinese note explains that translated bibliographic titles are for reading and the DOI record is authoritative for citation.
+
+## Institutional award sources — follow-up
+
+- The [IMPTE report of the 14 November 2024 CoE Project Exhibition](https://ipt.nsysu.edu.tw/p/406-1214-345393,r5825.php?Lang=en) explicitly names Arnav as an ICE Ph.D. student and confirms an Award of Excellence. Both language versions now use this official source and award wording, replacing the earlier second-prize description.
+- The [ICE doctoral research award announcement](https://ice.nsysu.edu.tw/p/406-1209-379419,r3584.php?Lang=zh-tw) explicitly names 安納夫 (Arnav) among recipients of the 114 academic-year doctoral research performance award (博士生研究績優獎勵金). This verified distinction has been added in English and Traditional Chinese; academic year 114 corresponds to 2025–2026.
+- The obsolete professional-network profile, award citation, and structured identity reference have been removed. Six scholarly/code profiles remain. University award announcements are cited under their awards rather than treated as personal identity profiles.

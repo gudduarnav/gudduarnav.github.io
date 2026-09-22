@@ -73,7 +73,8 @@
     "verify": "View review record",
     "awardsTitle": "Awards & qualifications",
     "awards": [
-      {"title": "Second prize", "text": "National Sun Yat-sen University poster competition", "link": "https://www.linkedin.com/posts/gudduarnav_gratitude-research-nsysu-activity-7267875452717797376-G2XX"},
+      {"title": "Doctoral Research Performance Award", "text": "National Sun Yat-sen University · Academic year 114 (2025–2026)", "link": "https://ice.nsysu.edu.tw/p/406-1209-379419,r3584.php?Lang=zh-tw"},
+      {"title": "Award of Excellence", "text": "7th CoE Project Exhibition, National Sun Yat-sen University · 14 November 2024", "link": "https://ipt.nsysu.edu.tw/p/406-1214-345393,r5825.php?Lang=en"},
       {"title": "GATE-2016 fellowship", "text": "Electronics and Communication Engineering · M.Tech. study"},
       {"title": "IELTS 7.5 · CEFR C1", "text": "English proficiency · 2023"},
       {"title": "English Technical Writing · A−", "text": "National Sun Yat-sen University"}
@@ -82,8 +83,8 @@
     "profilesEyebrow": "06 / Around the web",
     "profilesTitle": "Follow the research.",
     "profilesIntro": "Find current citation metrics, publication records, and projects on my research and professional profiles.",
-    "profileNames": ["ORCID", "Google Scholar", "IEEE Xplore", "DBLP", "ResearchGate", "LinkedIn", "GitHub"],
-    "profileDescriptions": ["Researcher identifier", "Publications & citations", "Publisher author profile", "Bibliographic records", "Research & collaboration", "Professional updates", "Code & projects"],
+    "profileNames": ["ORCID", "Google Scholar", "IEEE Xplore", "DBLP", "ResearchGate", "GitHub"],
+    "profileDescriptions": ["Researcher identifier", "Publications & citations", "Publisher author profile", "Bibliographic records", "Research & collaboration", "Code & projects"],
     "contactEyebrow": "07 / Let’s connect",
     "contactTitle": "A conversation can start the next idea.",
     "contactText": "For research collaborations, reviewing, and academic enquiries, send me an email. I’m based in Kaohsiung, Taiwan.",
@@ -166,7 +167,8 @@
     "verify": "查看審查紀錄",
     "awardsTitle": "榮譽與專業資格",
     "awards": [
-      {"title": "海報競賽第二名", "text": "國立中山大學海報競賽", "link": "https://www.linkedin.com/posts/gudduarnav_gratitude-research-nsysu-activity-7267875452717797376-G2XX"},
+      {"title": "博士生研究績優獎勵金", "text": "國立中山大學・114 學年度（2025–2026 年）", "link": "https://ice.nsysu.edu.tw/p/406-1209-379419,r3584.php?Lang=zh-tw"},
+      {"title": "優等獎", "text": "國立中山大學第七屆工學院專題成果展・2024 年 11 月 14 日", "link": "https://ipt.nsysu.edu.tw/p/406-1214-345393,r5825.php?Lang=en"},
       {"title": "2016 年印度工程研究所入學考試獎學金", "text": "電子與通訊工程領域・支持技術碩士學位進修"},
       {"title": "雅思 7.5 分・歐洲共同語言參考標準 C1 級", "text": "英語能力認證・2023 年"},
       {"title": "英文科技寫作・A−", "text": "國立中山大學"}
@@ -175,8 +177,8 @@
     "profilesEyebrow": "06 ／ 學術與專業檔案",
     "profilesTitle": "追蹤研究動態。",
     "profilesIntro": "透過學術與專業平台，瀏覽最新引用數據、出版紀錄與研究專案。",
-    "profileNames": ["研究者識別碼", "Google 學術搜尋", "IEEE 學術文獻資料庫", "電腦科學文獻資料庫", "研究社群平台", "專業人脈平台", "程式碼託管平台"],
-    "profileDescriptions": ["永久研究者識別碼", "學術著作與引用紀錄", "出版社作者檔案", "書目與出版紀錄", "研究成果與學術合作", "專業經歷與最新動態", "程式碼與專案成果"],
+    "profileNames": ["研究者識別碼", "Google 學術搜尋", "IEEE 學術文獻資料庫", "電腦科學文獻資料庫", "研究社群平台", "程式碼託管平台"],
+    "profileDescriptions": ["永久研究者識別碼", "學術著作與引用紀錄", "出版社作者檔案", "書目與出版紀錄", "研究成果與學術合作", "程式碼與專案成果"],
     "contactEyebrow": "07 ／ 聯絡我",
     "contactTitle": "下一個研究構想，從交流開始。",
     "contactText": "歡迎來信洽談研究合作、審稿邀請及學術交流。目前居於臺灣高雄。",

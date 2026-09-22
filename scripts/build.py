@@ -17,10 +17,9 @@ PROFILE_URLS = [
     'https://ieeexplore.ieee.org/author/37087052296',
     'https://dblp.org/pid/417/8805',
     'https://www.researchgate.net/profile/Arnav-Mukhopadhyay',
-    'https://www.linkedin.com/in/gudduarnav',
     'https://github.com/gudduarnav',
 ]
-PROFILE_INITIALS = ['iD', 'Gs', 'Ie', 'Db', 'Rg', 'in', 'Gh']
+PROFILE_INITIALS = ['iD', 'Gs', 'Ie', 'Db', 'Rg', 'Gh']
 TOOLS = ['Python', 'C', 'C++', 'CVXPY', 'PyTorch', 'Stable-Baselines', 'GNU Radio', 'OptiSystem', 'LaTeX']
 REVIEW_COUNTS = [13, 7, 6, 2, 2, 1]
 BASE = 'https://gudduarnav.github.io'
