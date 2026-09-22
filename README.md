@@ -11,6 +11,8 @@ A bilingual, responsive academic portfolio for [gudduarnav.github.io](https://gu
 
 Edit `data/content.json` for the bilingual site copy and `data/publications.json` for the shared publication record. Chinese display titles and venue names are translations, while published author names and persistent identifiers retain their official spelling.
 
+Edit `data/journal-metrics.json` for journal metrics, category ranks, and source links. Each journal publication references a shared `venue_id`. Its clickable rank opens the exact Clarivate JCR journal profile and metric year. When refreshing a record, verify its JIF, JCI, category quartile, rank, denominator, and latest available year together. Keep the JCR abbreviation and URL year synchronized; the builder validates both.
+
 Regenerate the two HTML pages and sitemap:
 
 ```bash
@@ -31,12 +33,13 @@ Open `http://localhost:8000/` or `http://localhost:8000/zh-tw/`. Commit generate
 - Only verified peer-reviewed authored books qualify for a books section. None were identified in the September 2026 audit, so there is no books or teaching-material section.
 - Retain the Springer CODEC 2019 proceedings contribution in Publications as a proceedings chapter, not as an authored book.
 - The MCA qualification and employment before VSM Aerospace are intentionally excluded at the owner's request. Do not reintroduce them from public profile imports.
-- Ph.D. remains in progress, expected March 2027, as confirmed by the owner on 22 September 2026.
+- Ph.D. remains in progress, expected by the end of February 2027, as confirmed by the owner on 22 September 2026.
 - Verify author order and publisher metadata before updating records. Citation counts remain on linked live profiles; peer-review counts are explicitly dated.
 - Cite official university announcements for university awards, with the institution's actual award wording.
+- Use JIF quartiles within the displayed JCR category, prioritizing Telecommunications where available. Identify historical metrics and current indexing holds. Conference proceedings and proceedings chapters must not receive journal metrics.
 - Exclude phone numbers, street addresses, and private CV files. The existing `CV_Arnav.pdf` ignore rule must remain in place.
 
-See [the publication audit](docs/publication-audit-2026-09-22.md) and [verification notes](docs/verification.md).
+See [the publication audit](docs/publication-audit-2026-09-22.md), [journal-metrics audit](docs/journal-metrics-audit-2026-09-22.md), and [verification notes](docs/verification.md).
 
 ## License
 

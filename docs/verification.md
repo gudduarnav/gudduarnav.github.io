@@ -30,3 +30,11 @@ Tested using Google Chrome 153.0.8010.36, Playwright 1.63.0, and axe-core 4.13.0
 ## Delivery
 
 The generated static website is ready for the repository's existing GitHub Pages workflow. No commit, push, or production deployment was performed during this update. The publication audit and maintainable bilingual source files are included in the repository.
+
+## Journal metrics and final copy update
+
+- All six journal JIF/JCI values, primary quartiles, ranks, denominators, additional categories, and latest available metric years were verified directly against Clarivate JCR. Optical and Quantum Electronics retains its verified 2024 historical data and current MJL hold notice.
+- Each rank badge and its expanded source list link to the exact JCR journal profile with the displayed metric year. The builder validates the official host, profile route, journal abbreviation, and year. Browser checks verified all six destinations in both languages/themes, keyboard focus, and opening the expected new-tab URL. The click test intercepted the remote navigation; authenticated metrics were verified separately through Clarivate's APIs.
+- The final metrics update passed **40 layout checks** (English/Traditional Chinese × light/dark × 320/390/768/1080/1440 pixels × expanded/collapsed details), with no horizontal overflow. Eight additional WCAG A/AA scans of the publication section reported no violations, and there were no page JavaScript errors.
+- The rendered pages contain six journal-metric groups, nine conference/chapter not-applicable notices, and one historical hold notice. Q1–Q4 colors retain explicit text labels in both themes.
+- Both pages show the revised Ph.D. expectation of the end of February 2027. The requested publication heading slogan, introductory paragraph, and totals explanation are removed. No LinkedIn links or previous March 2027 date remain.

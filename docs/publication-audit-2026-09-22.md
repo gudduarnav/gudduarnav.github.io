@@ -26,7 +26,7 @@ All 15 author lists and English titles were reconciled to publisher-deposited Cr
 
 The public ORCID record contains 31 peer reviews: IEEE Internet of Things Journal (13), IEEE Wireless Communications Letters (7), IEEE Transactions on Communications (6), IEEE Communications Letters (2), IEEE Transactions on Green Communications and Networking (2), and Electronics Letters (1). The website dates this snapshot to 22 September 2026.
 
-The owner confirmed in this session that the Ph.D. remains in progress with expected completion in March 2027. ResearchGate's conflicting degree/completion description was not imported. Existing grades and distinctions were retained, not presented as newly verified academic transcripts. The [public professional résumé](https://www.cake.me/resumes/arnav-mukhopadhyay-arnav) corroborates VSM Aerospace dates and teaching subject areas. The owner requested removal of the MCA qualification and all employment earlier than VSM Aerospace; these are absent from both language versions and structured metadata.
+The owner confirmed in this session that the Ph.D. remains in progress with expected completion by the end of February 2027. ResearchGate's conflicting degree/completion description was not imported. Existing grades and distinctions were retained, not presented as newly verified academic transcripts. The [public professional résumé](https://www.cake.me/resumes/arnav-mukhopadhyay-arnav) corroborates VSM Aerospace dates and teaching subject areas. The owner requested removal of the MCA qualification and all employment earlier than VSM Aerospace; these are absent from both language versions and structured metadata.
 
 ## Localization
 

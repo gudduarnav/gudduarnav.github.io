@@ -18,7 +18,8 @@
     "doi": "10.1109/LWC.2026.3714504",
     "type": "Journal",
     "first": false,
-    "year": 2026
+    "year": 2026,
+    "venue_id": "wcl"
   },
   {
     "title": {
@@ -39,7 +40,8 @@
     "doi": "10.1109/TWC.2026.3680520",
     "type": "Journal",
     "first": true,
-    "year": 2026
+    "year": 2026,
+    "venue_id": "twc"
   },
   {
     "title": {
@@ -60,7 +62,8 @@
     "doi": "10.1109/TCOMM.2026.3658396",
     "type": "Journal",
     "first": true,
-    "year": 2026
+    "year": 2026,
+    "venue_id": "tcomm"
   },
   {
     "title": {
@@ -82,7 +85,8 @@
     "doi": "10.1109/COMST.2025.3550118",
     "type": "Survey",
     "first": true,
-    "year": 2026
+    "year": 2026,
+    "venue_id": "comst"
   },
   {
     "title": {
@@ -103,7 +107,8 @@
     "doi": "10.1109/MCOM.001.2500627",
     "type": "Magazine",
     "first": true,
-    "year": 2026
+    "year": 2026,
+    "venue_id": "commag"
   },
   {
     "title": {
@@ -268,7 +273,8 @@
     "doi": "10.1007/s11082-020-02320-w",
     "type": "Journal",
     "first": false,
-    "year": 2020
+    "year": 2020,
+    "venue_id": "oqe"
   },
   {
     "title": {

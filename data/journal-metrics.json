@@ -1,0 +1,260 @@
+{
+  "checked": "2026-09-22",
+  "sources": {
+    "ieee2025": {
+      "url": "https://open.ieee.org/wp-content/uploads/IEEE-Title-List-August-2026.pdf",
+      "label": {
+        "en": "IEEE title list · August 2026 (PDF)",
+        "zh-TW": "IEEE 期刊清單・2026 年 8 月（PDF）"
+      }
+    },
+    "ieeeRanks": {
+      "url": "https://innovate.ieee.org/ieee-journals-continue-to-excel-in-citation-rankings/",
+      "label": {
+        "en": "IEEE · 2025 JIF category rankings",
+        "zh-TW": "IEEE・2025 年期刊影響因子領域排名"
+      }
+    },
+    "oqeQuartiles": {
+      "url": "https://uefiscdi.gov.ro/resource-865584-JCR_2024.iunie2025.pdf",
+      "label": {
+        "en": "UEFISCDI · 2024 JCR category quartiles (PDF)",
+        "zh-TW": "羅馬尼亞研究資助機構・2024 年 JCR 領域四分位（PDF）"
+      }
+    },
+    "wclMjl": {
+      "url": "https://mjl.clarivate.com/search-results?issn=2162-2337&hide_exact_match_fl=true",
+      "label": {
+        "en": "Clarivate Master Journal List · journal profile",
+        "zh-TW": "科睿唯安期刊總表・期刊資料"
+      }
+    },
+    "twcMjl": {
+      "url": "https://mjl.clarivate.com/search-results?issn=1536-1276&hide_exact_match_fl=true",
+      "label": {
+        "en": "Clarivate Master Journal List · journal profile",
+        "zh-TW": "科睿唯安期刊總表・期刊資料"
+      }
+    },
+    "tcommMjl": {
+      "url": "https://mjl.clarivate.com/search-results?issn=0090-6778&hide_exact_match_fl=true",
+      "label": {
+        "en": "Clarivate Master Journal List · journal profile",
+        "zh-TW": "科睿唯安期刊總表・期刊資料"
+      }
+    },
+    "comstMjl": {
+      "url": "https://mjl.clarivate.com/search-results?issn=1553-877X&hide_exact_match_fl=true",
+      "label": {
+        "en": "Clarivate Master Journal List · journal profile",
+        "zh-TW": "科睿唯安期刊總表・期刊資料"
+      }
+    },
+    "commagMjl": {
+      "url": "https://mjl.clarivate.com/search-results?issn=0163-6804&hide_exact_match_fl=true",
+      "label": {
+        "en": "Clarivate Master Journal List · journal profile",
+        "zh-TW": "科睿唯安期刊總表・期刊資料"
+      }
+    },
+    "oqeMjl": {
+      "url": "https://mjl.clarivate.com/search-results?issn=0306-8919&hide_exact_match_fl=true",
+      "label": {
+        "en": "Clarivate Master Journal List · journal profile",
+        "zh-TW": "科睿唯安期刊總表・期刊資料"
+      }
+    }
+  },
+  "venues": {
+    "wcl": {
+      "name": "IEEE WIRELESS COMMUNICATIONS LETTERS",
+      "issn": "2162-2337",
+      "mjl_sequence": "D5944J",
+      "metric_year": 2025,
+      "release_year": 2026,
+      "jif": "5.1",
+      "jci": "1.18",
+      "category": "telecommunications",
+      "quartile": 2,
+      "rank": 37,
+      "total": 127,
+      "historical": false,
+      "on_hold": false,
+      "source_ids": [
+        "ieee2025",
+        "wclMjl"
+      ],
+      "jcr_abbreviation": "IEEE WIREL COMMUN LE",
+      "jcr_url": "https://jcr.clarivate.com/jcr-jp/journal-profile?journal=IEEE%20WIREL%20COMMUN%20LE&year=2025",
+      "other_categories": [
+        {
+          "category": "informationSystems",
+          "quartile": 2,
+          "rank": 69,
+          "total": 266
+        },
+        {
+          "category": "electrical",
+          "quartile": 1,
+          "rank": 90,
+          "total": 369
+        }
+      ]
+    },
+    "twc": {
+      "name": "IEEE TRANSACTIONS ON WIRELESS COMMUNICATIONS",
+      "issn": "1536-1276",
+      "mjl_sequence": "14025J",
+      "metric_year": 2025,
+      "release_year": 2026,
+      "jif": "10.3",
+      "jci": "2.17",
+      "category": "telecommunications",
+      "quartile": 1,
+      "rank": 5,
+      "total": 127,
+      "historical": false,
+      "on_hold": false,
+      "source_ids": [
+        "ieee2025",
+        "twcMjl",
+        "ieeeRanks"
+      ],
+      "jcr_abbreviation": "IEEE T WIREL COMMUN",
+      "jcr_url": "https://jcr.clarivate.com/jcr-jp/journal-profile?journal=IEEE%20T%20WIREL%20COMMUN&year=2025",
+      "other_categories": [
+        {
+          "category": "electrical",
+          "quartile": 1,
+          "rank": 16,
+          "total": 369
+        }
+      ]
+    },
+    "tcomm": {
+      "name": "IEEE TRANSACTIONS ON COMMUNICATIONS",
+      "issn": "0090-6778",
+      "mjl_sequence": "42895J",
+      "metric_year": 2025,
+      "release_year": 2026,
+      "jif": "8.4",
+      "jci": "1.74",
+      "category": "telecommunications",
+      "quartile": 1,
+      "rank": 13,
+      "total": 127,
+      "historical": false,
+      "on_hold": false,
+      "source_ids": [
+        "ieee2025",
+        "tcommMjl",
+        "ieeeRanks"
+      ],
+      "jcr_abbreviation": "IEEE T COMMUN",
+      "jcr_url": "https://jcr.clarivate.com/jcr-jp/journal-profile?journal=IEEE%20T%20COMMUN&year=2025",
+      "other_categories": [
+        {
+          "category": "electrical",
+          "quartile": 1,
+          "rank": 36,
+          "total": 369
+        }
+      ]
+    },
+    "comst": {
+      "name": "IEEE COMMUNICATIONS SURVEYS AND TUTORIALS",
+      "issn": "1553-877X",
+      "mjl_sequence": "C9289J",
+      "metric_year": 2025,
+      "release_year": 2026,
+      "jif": "50.6",
+      "jci": "10.71",
+      "category": "telecommunications",
+      "quartile": 1,
+      "rank": 1,
+      "total": 127,
+      "historical": false,
+      "on_hold": false,
+      "source_ids": [
+        "ieee2025",
+        "comstMjl",
+        "ieeeRanks"
+      ],
+      "jcr_abbreviation": "IEEE COMMUN SURV TUT",
+      "jcr_url": "https://jcr.clarivate.com/jcr-jp/journal-profile?journal=IEEE%20COMMUN%20SURV%20TUT&year=2025",
+      "other_categories": [
+        {
+          "category": "informationSystems",
+          "quartile": 1,
+          "rank": 1,
+          "total": 266
+        }
+      ]
+    },
+    "commag": {
+      "name": "IEEE COMMUNICATIONS MAGAZINE",
+      "issn": "0163-6804",
+      "mjl_sequence": "04724J",
+      "metric_year": 2025,
+      "release_year": 2026,
+      "jif": "8.3",
+      "jci": "1.78",
+      "category": "telecommunications",
+      "quartile": 1,
+      "rank": 14,
+      "total": 127,
+      "historical": false,
+      "on_hold": false,
+      "source_ids": [
+        "ieee2025",
+        "commagMjl",
+        "ieeeRanks"
+      ],
+      "jcr_abbreviation": "IEEE COMMUN MAG",
+      "jcr_url": "https://jcr.clarivate.com/jcr-jp/journal-profile?journal=IEEE%20COMMUN%20MAG&year=2025",
+      "other_categories": [
+        {
+          "category": "electrical",
+          "quartile": 1,
+          "rank": 38,
+          "total": 369
+        }
+      ]
+    },
+    "oqe": {
+      "name": "OPTICAL AND QUANTUM ELECTRONICS",
+      "issn": "0306-8919",
+      "mjl_sequence": "73674J",
+      "metric_year": 2024,
+      "release_year": 2025,
+      "jif": "4.0",
+      "jci": "1.04",
+      "category": "optics",
+      "quartile": 1,
+      "rank": 31,
+      "total": 125,
+      "historical": true,
+      "on_hold": true,
+      "source_ids": [
+        "oqeMjl",
+        "oqeQuartiles"
+      ],
+      "other_categories": [
+        {
+          "category": "electrical",
+          "quartile": 2,
+          "rank": 114,
+          "total": 368
+        },
+        {
+          "category": "quantum",
+          "quartile": 2,
+          "rank": 13,
+          "total": 28
+        }
+      ],
+      "jcr_abbreviation": "OPT QUANT ELECTRON",
+      "jcr_url": "https://jcr.clarivate.com/jcr-jp/journal-profile?journal=OPT%20QUANT%20ELECTRON&year=2024"
+    }
+  }
+}
